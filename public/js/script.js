@@ -1,11 +1,10 @@
 console.log('this is the script.js');
 
+var lottie=require('lottie-web')
+
 var elem=document.getElementById('bodymovin');
 
-var triggerStop=document.querySelector("#click_stop")
-var triggerPlay=document.querySelector("#click_play")
-var triggerNext=document.querySelector("#click_next")
-var triggerPrev=document.querySelector("#click_prev")
+
 
 var animData = {
     container: elem,

@@ -2,13 +2,17 @@ const express = require('express');
 var app=express()
 var parser=require('body-parser')
 var request=require('request')
+var lottie=require('lottie-web')
+var ENV=require('dotenv/config')
 
+console.log(process.env.SECRET_MESSAGE)
 app.use(parser.urlencoded({
     extended: true
   }));
 
 app.set('view engine', 'ejs');
 app.use(express.static('public'))
+
 
 app.get('/', (req, res) => {
     res.render('index');
