@@ -1,6 +1,7 @@
 const express = require('express');
 var app=express()
 var parser=require('body-parser')
+var request=require('request')
 
 app.use(parser.urlencoded({
     extended: true
@@ -24,7 +25,7 @@ app.get('/team', (req, res) => {
 
 app.get('/industry', (req, res) => {
     
-   res.render('team'); 
+   res.render('industry'); 
 });
 
 app.get('/contact', (req, res) => {
