@@ -147,6 +147,40 @@ box-shadow: 6px 9px 16px -7px rgba(0,0,0,0.55);
     text-align:left;
     color: #5D5560;
 }
+.bodycopy_footertext{
+    font-family: 'Open Sans';
+    font-size: 0.95rem;
+    font-weight: 100;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align:left;
+    color: #5D5560;
+    
+}
+.bodycopy_footer{
+    font-family: 'Open Sans';
+    font-size: 0.9rem;
+    font-weight: 100;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align:left;
+    color: #5D5560;
+}
+.bodycopy_footer:hover{
+    font-family: 'Open Sans';
+    font-size: 0.9rem;
+    font-weight: 100;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align:left;
+    color: rgb(59, 54, 61);
+}
 .bodycopy-card{
     font-family: 'Open Sans';
     font-size: 20px;
