@@ -1,6 +1,6 @@
 console.log('this is the script.js');
 
-var lottie=require('lottie-web')
+
 
 var elem=document.getElementById('bodymovin');
 
@@ -15,7 +15,7 @@ var animData = {
     rendererSettings: {
     progressiveLoad:false
     },
-    path: 'process.json'
+    path: 'public/process.json'
 };
 
 

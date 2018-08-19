@@ -55,34 +55,34 @@
             <div class="tab-pane fade show active" id="customer" role="tabpanel" aria-labelledby="home-tab">
               <form action="/getcustomer" method="POST" >
                 <div class="form-element " style="width: 60%;">
-                  <input class="form-control form-control-lg" type="text" placeholder="First Name" name="fName" required>
+                  <input class="form-control form-control" type="text" placeholder="First Name" name="fName" required>
                 </div>
                 <div class="form-element " style="width: 60%;">
-                  <input class="form-control form-control-lg" type="text" placeholder="Last Name" name="lName" required="true">
+                  <input class="form-control form-control" type="text" placeholder="Last Name" name="lName" required="true">
                 </div>
                 <div class="form-element" style="width: 70%;">
-                  <input class="form-control form-control-lg" type="email" placeholder="example@gmail.com" name="eMail" required="true">
+                  <input class="form-control form-control" type="email" placeholder="example@gmail.com" name="eMail" required="true">
                 </div>
                 <div class="form-element" style="width: 70%;">
 
-                  <input class="form-control form-control-lg" type="tel" placeholder="Phone" name="phone" required="true">
+                  <input class="form-control form-control" type="tel" placeholder="Phone" name="phone" required="true">
                 </div>
 
 
                 <div class="form-element" style="width: 50%;">
-                  <input class="form-control form-control-lg" type="text" placeholder="Company Name" name="cName" required="true">
+                  <input class="form-control form-control" type="text" placeholder="Company Name" name="cName" required="true">
                 </div>
                 <div class="form-element" style="width: 50%;">
-                  <input class="form-control form-control-lg" type="url" placeholder="Website" name="web" >
+                  <input class="form-control form-control" type="url" placeholder="Website" name="web" >
                 </div>
                 <div class="form-element">
-                  <textarea class=" form-control form-control-lg" id="exampleFormControlTextarea1" placeholder="Annual Packaging Purchase Volume"
+                  <textarea class=" form-control form-control" id="exampleFormControlTextarea1" placeholder="Annual Packaging Purchase Volume"
                     rows="2" name="purchaseVolume" ></textarea>
                 </div>
 
 
                 <div class="form-element">
-                  <textarea class=" form-control form-control-lg" id="exampleFormControlTextarea1" placeholder="Message" name="message" rows="8"></textarea>
+                  <textarea class=" form-control form-control" id="exampleFormControlTextarea1" placeholder="Message" name="message" rows="8"></textarea>
                 </div>
                 <button type="submit" class="btn-text btn btn-custom">
                   <div class=s tyle="margin: auto;">Get Quote</div>
@@ -95,26 +95,27 @@
             <div class="tab-pane fade" id="supplier" role="tabpanel" aria-labelledby="profile-tab">
               <form action="/getsupplier" method="POST" >
                 <div class="form-element " style="width: 60%;">
-                  <input class="form-control form-control-lg" type="text" placeholder="First Name" name="fName" required="true">
+                  <input class="form-control form-control" type="text" placeholder="First Name" name="fName" required="true">
                 </div>
                 <div class="form-element " style="width: 60%;">
-                  <input class="form-control form-control-lg" type="text" placeholder="Last Name" name="lName" required="true">
+                  <input class="form-control form-control" type="text" placeholder="Last Name" name="lName" required="true">
                 </div>
                 <div class="form-element" style="width: 70%;">
-                  <input class="form-control form-control-lg" type="email" placeholder="example@gmail.com" name="eMail" required="true">
+                  <input class="form-control form-control" type="email" placeholder="example@gmail.com" name="eMail" required="true">
                 </div>
                 <div class="form-element" style="width: 70%;">
 
-                  <input class="form-control form-control-lg" type="tel" placeholder="Phone" name="phone" required="true">
+                  <input class="form-control form-control" type="tel" placeholder="Phone" name="phone" required="true">
                 </div>
 
-                <input class="form-control form-control-lg form-element" style="width:50%; margin: 2% 0 2% 0;" type="text" placeholder="Company Name" name="cName" required="true">
+                <input class="form-control form-control form-element" style="width:50%; margin: 2% 0 2% 0;" type="text" placeholder="Company Name" name="cName" required="true">
                 <!-- <div class="form-element" style="width: 50%;">
-                  <input class="form-control form-control-lg" type="text" placeholder="Company Name" name="cName" required="true">
+                  <input class="form-control form-control" type="text" placeholder="Company Name" name="cName" required="true">
                 </div> -->
 
 
-                <select id="ProductList" name="productList" class="form-control form-control-lg" style="width: 50%;">
+                <select id="ProductList" name="productList" class="form-control form-control" style="width: 50%;">
+                  <option value="Plastic Bottles & Jar">Select product</option>
                   <option value="Plastic Bottles & Jar">Plastic Bottles & Jar</option>
                   <option value="Glass Bottles & jar">Glass Bottles & jar</option>
                   <option value="Metal Cans & Tin">Metal Cans & Tin</option>
@@ -128,10 +129,10 @@
                 </select>
 
                 <div class="form-element " style="width: 35%;">
-                  <input class="form-control form-control-lg" type="text" placeholder="Production Capacity" name="productionCapacity">
+                  <input class="form-control form-control" type="text" placeholder="Production Capacity" name="productionCapacity">
                 </div>
                 <div class="form-element">
-                  <textarea class=" form-control form-control-lg" id="exampleFormControlTextarea1" placeholder="Message" rows="8" name="message" ></textarea>
+                  <textarea class=" form-control form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="8" name="message" ></textarea>
                 </div>
                 <button type="submit" class="btn-text btn btn-custom">
                   <div class="">Get Quote</div>
@@ -141,12 +142,8 @@
 
 
 
-              <form action="/addfriend" method="POST">
-                <div class="form-element">
-                  <input type="text" name="newFriend" placeholder="xyz" >
-                </div>
-                <button  type="submit" class="btn-text btn btn-custom">send</button>
-              </form>
+             
+              
             </div>
 
 
