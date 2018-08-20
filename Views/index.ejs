@@ -1,6 +1,5 @@
 <%- include partials/header.ejs %>
-<%- include partials/nav.ejs %>
-
+  <%- include partials/nav.ejs %>
 
 
 <body>
@@ -8,12 +7,11 @@
   
   <!-- svg animation -->
   
-    <div class="container" >
-    
-   
-      <div id="bodymovin">Bodymovin</div>
-    
+  <div class="container ">
+    <div class="row">
+      <img src="assets/hero_design.png" class="mx-auto " alt="" style="margin-top:7%;">
     </div>
+</div>
   
 
   <!-- DIAGONAL BLUE             -->
@@ -37,7 +35,7 @@
 
 
   <div class="container">
-    <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="9000">
+    <div id="carouselExample" class="carousel slide" data-ride="" data-interval="5000" data-pause="false" data-wrap="false">
       <div class="carousel-inner row w-100 mx-auto" role="listbox">
         <div class="carousel-item col-md-3  active">
           <div class="panel panel-default">
@@ -165,13 +163,6 @@
   </div>
 
 
-
-
-
-
-
-
-
   <!-- idgaf -->
 
 
@@ -295,7 +286,91 @@
       </div>
     </div>
   </div>
+<!-- testimonials -->
+<h1 class="title-blue" style="margin-top: 10%;">Look what people have to say about us</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12">
+      <div class="container-fluid">
+        <div class="row">
+          <p class="title-testimonial">"Born in April 2016, Pack8 is a professional, simple, one-step, all-inclusive solution in the packaging industry.
+              Pack8 specialises in endeavouring an extensive spectrum of innovative designs and services that intend to meet"</p>
+          <p class="bodycopy-regular m-auto">-Lorem Ipsum </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="container-fluid">
+          <div class="row">
+            <p class="title-testimonial">"Born in April 2016, Pack8 is a professional, simple, one-step, all-inclusive solution in the packaging industry.
+                Pack8 specialises in endeavouring an extensive spectrum of innovative designs and services that intend to meet"</p>
+            <p class="bodycopy-regular m-auto">-Lorem Ipsum </p>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
 
+
+<div id="accordion">
+      <div class="container">
+        
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <p class="title-testimonial">"Born in April 2016, Pack8 is a professional, simple, one-step, all-inclusive solution in the packaging industry.
+                            Pack8 specialises in endeavouring an extensive spectrum of innovative designs and services that intend to meet"</p>
+                        <p class="bodycopy-regular m-auto">-Lorem Ipsum</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <p class="title-testimonial">"Born in April 2016, Pack8 is a professional, simple, one-step, all-inclusive solution in the packaging industry.
+                              Pack8 specialises in endeavouring an extensive spectrum of innovative designs and services that intend to meet"</p>
+                          <p class="bodycopy-regular m-auto">-Lorem Ipsum </p>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <p class="title-testimonial">"Born in April 2016, Pack8 is a professional, simple, one-step, all-inclusive solution in the packaging industry.
+                              Pack8 specialises in endeavouring an extensive spectrum of innovative designs and services that intend to meet"</p>
+                          <p class="bodycopy-regular m-auto">-Lorem Ipsum </p>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <p class="title-testimonial">"Born in April 2016, Pack8 is a professional, simple, one-step, all-inclusive solution in the packaging industry.
+                              Pack8 specialises in endeavouring an extensive spectrum of innovative designs and services that intend to meet"</p>
+                          <p class="bodycopy-regular m-auto">-Lorem Ipsum </p>
+                        </div>
+                      </div>
+                    </div>
+                  
+                </div>
+              </div>
+            </div>
+              
+                <div class="bodycopy-bold" id="headingOne">
+                  
+                    <a style="color: #0F68B5;" id="wowow" role="button" class=" bodycopy-boldm-auto" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      See more
+                    </a>
+                  
+                
+            
+      </div>
+    
+</div>
   <div id="feature-section">
 
 
@@ -313,7 +388,7 @@
             to get it custom made by us! Affordable fares and great assistance simultaneously meeting your specifications
             with accelerated transmission at your doorstep.</p>
           
-            <a href="contact.html" class=" btn btn-custom">Meet our design team</a>
+            <a href="/contact" class=" btn btn-custom">Meet our design team</a>
           
         </div>
       </div>
@@ -331,32 +406,33 @@
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+    
   <script>
-    $('#carouselExample').on('slide.bs.carousel', function (e) {
+    // $('#carouselExample').on('slide.bs.carousel', function (e) {
 
 
-      var $e = $(e.relatedTarget);
-      var idx = $e.index();
-      var itemsPerSlide = 4;
-      var totalItems = $('.carousel-item').length;
+    //   var $e = $(e.relatedTarget);
+    //   var idx = $e.index();
+    //   var itemsPerSlide = 4;
+    //   var totalItems = $('.carousel-item').length;
 
-      if (idx >= totalItems - (itemsPerSlide - 1)) {
-        var it = itemsPerSlide - (totalItems - idx);
-        for (var i = 0; i < it; i++) {
-          // append slides to end
-          if (e.direction == "left") {
-            $('.carousel-item').eq(i).appendTo('.carousel-inner');
-          } else {
-            $('.carousel-item').eq(0).appendTo('.carousel-inner');
-          }
-        }
-      }
-    });
+    //   if (idx >= totalItems - (itemsPerSlide - 1)) {
+    //     var it = itemsPerSlide - (totalItems - idx);
+    //     for (var i = 0; i < it; i++) {
+    //       // append slides to end
+    //       if (e.direction == "left") {
+    //         $('.carousel-item').eq(i).appendTo('.carousel-inner');
+    //       } else {
+    //         $('.carousel-item').eq(0).appendTo('.carousel-inner');
+    //       }
+    //     }
+    //   }
+    // });
 
 
-    $('#carouselExample').carousel({
-      interval: 1000;
-    });
+    // $('#carouselExample').carousel({
+    //   interval: 1000;
+    // });
 
 
     $(document).ready(function () {
@@ -375,11 +451,14 @@
 
     });
 
+
+
     
   </script>
 
   <script src="/js/lottie.js"></script>
   <script src="/js/script.js"></script>
+  <script src="/js/carousel.js"></script>
 </body>
 
 </html>

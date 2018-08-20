@@ -226,6 +226,17 @@ box-shadow: 6px 9px 16px -7px rgba(0,0,0,0.55);
     text-align: center;
     color: #5D5560;
 }
+.title-testimonial{
+    font-family: Zilla Slab;
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-style: italic;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #5D5560;
+}
 
 .title-white{
     font-family: Zilla Slab;

@@ -3,6 +3,7 @@ var app=express()
 var parser=require('body-parser')
 var request=require('request')
 var lottie=require('lottie-web')
+var path=require('path')
 var ENV=require('dotenv/config')
 var sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
@@ -19,6 +20,7 @@ console.log(process.env.SENDGRID_API_KEY)
 
 
 app.get('/', (req, res) => {
+    
     res.render('index');
 });
 
@@ -41,6 +43,9 @@ app.get('/contact', (req, res) => {
    res.render('contact'); 
 });
 
+app.get('/blogs',(req,res)=>{
+res.render('blogs')
+})
 
 
 
@@ -51,20 +56,43 @@ console.log('thanks entered')
 
 app.post('/getcustomer', (req, res) => {
     var info=req.body
-    const msg = [{
-        to: 'induyadav018@gmail.com',
+    var infoStringSubject= info.fName +" "+ info.lName + " , Customer contacted you on from pack8 . "
+    var infoStringEmailAddress=info.eMail
+    var infoDetails="<h1>"+infoStringSubject+"</h1>"+
+    "<h2>Contact No. " + info.phone + "</h2>"+
+    "<h2>Company name:" + info.cName + "</h2>"+
+    "<h2>email address:" + info.infoStringEmailAddress + "</h2>"+
+    "<h2>website" + info.web + "</h2>"+
+    "<h2>annual purchase vol." + info.purchaseVolume + "</h2>"+
+    "<h3>comments" + info.message + "<h3>"
+
+    var customerMessageHTML="<h style="+"font-family: Zilla Slab;"+
+    "font-size: 52px;"+
+    "font-weight: bold;"+
+    "font-style: normal;"+
+    "font-stretch: normal;"+
+    "line-height: normal;"+
+    "letter-spacing: normal;"+
+    "text-align: center;"+
+    "color: #0F68B5;>Thanks for contacting pack8, lets simplify packaging together</h>"
+
+    var msg = [{
+        to: info.eMail,
         from: 'noreply@pack8.in',
-        subject: 'thanks for contacting pack8',
-        text: 'Hello plain world!',
-        html: '<p>Hello HTML world!</p>',},
+        subject: 'Simplifying packaging!globally.',
+        text: 'Thanks for contacting pack8, lets simplify packaging together',
+        html:customerMessageHTML,
+    },
 
         {
-        to: 'itisashutoshworld@gmail.com',
-        from: 'sender@example.org',
-        subject: 'indu just placed an order',
-        text: 'she wants medicine bottle',
-        html: '<p>she wants medicine bottle</p>',
+        to: 'praveen.shinde@pack8.in',
+        from:'leads@pack8.in',
+        subject:infoStringSubject,
+        text: info.fName,
+        html: infoDetails,
       }];
+
+      
       sgMail.send(msg,function (error,response) {
         if(error){
             console.log(error)
