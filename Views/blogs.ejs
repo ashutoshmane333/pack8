@@ -6,120 +6,24 @@
 
 <body>
        
-          
+         
             <div class="container" style="padding-top:7%;">
                     <div class="row">
-           
+                    <% blogs.forEach(blog => {%>
                         <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mb-5">
                             <div class="card" style="width: 18rem;">
-                              <img class="card-img-top" src="blog_images/blog_image.jpg" alt="Card image cap" >
+                              <img class="card-img-top" src="<%=blog.image%>" alt="Card image cap" >
                               <div class="card-body">
-                                <h5 class="card-title title-grey" style="font-size:1.9rem;">Blog title</h5>
-                                <p class="card-text bodycopy-regular" style="font-size:1.2rem; text-align:center;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h5 class="card-title title-grey" style="font-size:1.2rem; font-weight:bold;"><%=blog.title%></h5>
+                                <p class="card-text bodycopy-regular" style="font-size:0.8rem; text-align:center;"><%=blog.content.substring(0,85)+"..."%></p>
                                 
-                                <a href="#" class="bodycopy-bold p-auto " style="color: #0F68B5;">Read more</a>
+                                <a href="/blogs/<%=blog.id%>" class="bodycopy-bold" style="color: #0F68B5;">Read more</a>
                                
                               </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mb-5">
-                            <div class="card" style="width: 18rem;">
-                              <img class="card-img-top" src="blog_images/blog_image.jpg" alt="Card image cap" >
-                              <div class="card-body">
-                                <h5 class="card-title title-grey" style="font-size:1.9rem;">Blog title</h5>
-                                <p class="card-text bodycopy-regular" style="font-size:1.2rem; text-align:center;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                
-                                <a href="#" class="bodycopy-bold p-auto " style="color: #0F68B5;">Read more</a>
-                               
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mb-5">
-                            <div class="card" style="width: 18rem;">
-                              <img class="card-img-top" src="blog_images/blog_image.jpg" alt="Card image cap" >
-                              <div class="card-body">
-                                <h5 class="card-title title-grey" style="font-size:1.9rem;">Blog title</h5>
-                                <p class="card-text bodycopy-regular" style="font-size:1.2rem; text-align:center;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                
-                                <a href="#" class="bodycopy-bold p-auto " style="color: #0F68B5;">Read more</a>
-                               
-                              </div>
-                            </div>
-                        </div>
+                    <%}); %>
                         
-                        <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mb-5">
-                            <div class="card" style="width: 18rem;">
-                              <img class="card-img-top" src="blog_images/blog_image.jpg" alt="Card image cap" >
-                              <div class="card-body">
-                                <h5 class="card-title title-grey" style="font-size:1.9rem;">Blog title</h5>
-                                <p class="card-text bodycopy-regular" style="font-size:1.2rem; text-align:center;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                
-                                <a href="#" class="bodycopy-bold p-auto " style="color: #0F68B5;">Read more</a>
-                               
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mb-5">
-                            <div class="card" style="width: 18rem;">
-                              <img class="card-img-top" src="blog_images/blog_image.jpg" alt="Card image cap" >
-                              <div class="card-body">
-                                <h5 class="card-title title-grey" style="font-size:1.9rem;">Blog title</h5>
-                                <p class="card-text bodycopy-regular" style="font-size:1.2rem; text-align:center;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                
-                                <a href="#" class="bodycopy-bold p-auto " style="color: #0F68B5;">Read more</a>
-                               
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mb-5">
-                            <div class="card" style="width: 18rem;">
-                              <img class="card-img-top" src="blog_images/blog_image.jpg" alt="Card image cap" >
-                              <div class="card-body">
-                                <h5 class="card-title title-grey" style="font-size:1.9rem;">Blog title</h5>
-                                <p class="card-text bodycopy-regular" style="font-size:1.2rem; text-align:center;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                
-                                <a href="#" class="bodycopy-bold p-auto " style="color: #0F68B5;">Read more</a>
-                               
-                              </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mb-5">
-                            <div class="card" style="width: 18rem;">
-                              <img class="card-img-top" src="blog_images/blog_image.jpg" alt="Card image cap" >
-                              <div class="card-body">
-                                <h5 class="card-title title-grey" style="font-size:1.9rem;">Blog title</h5>
-                                <p class="card-text bodycopy-regular" style="font-size:1.2rem; text-align:center;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                
-                                <a href="#" class="bodycopy-bold p-auto " style="color: #0F68B5;">Read more</a>
-                               
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mb-5">
-                            <div class="card" style="width: 18rem;">
-                              <img class="card-img-top" src="blog_images/blog_image.jpg" alt="Card image cap" >
-                              <div class="card-body">
-                                <h5 class="card-title title-grey" style="font-size:1.9rem;">Blog title</h5>
-                                <p class="card-text bodycopy-regular" style="font-size:1.2rem; text-align:center;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                
-                                <a href="#" class="bodycopy-bold p-auto " style="color: #0F68B5;">Read more</a>
-                               
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mb-5">
-                            <div class="card" style="width: 18rem;">
-                              <img class="card-img-top" src="blog_images/blog_image.jpg" alt="Card image cap" >
-                              <div class="card-body">
-                                <h5 class="card-title title-grey" style="font-size:1.9rem;">Blog title</h5>
-                                <p class="card-text bodycopy-regular" style="font-size:1.2rem; text-align:center;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                
-                                <a href="#" class="bodycopy-bold p-auto " style="color: #0F68B5;">Read more</a>
-                               
-                              </div>
-                            </div>
-                        </div>
                         
                         
                     </div>
