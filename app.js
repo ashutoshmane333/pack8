@@ -4,9 +4,12 @@ var parser=require('body-parser')
 var request=require('request')
 var lottie=require('lottie-web')
 var path=require('path')
+var config=require('config')
 var ENV=require('dotenv/config')
 var sgMail = require('@sendgrid/mail');
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+console.log(config.get('app.apiKey.ss'))
+sgMail.setApiKey(config.get('app.apiKey.ss'));
+console.log(config.get('app.apiKey.ss'))
 app.use(parser.urlencoded({
     extended: true
   }));
@@ -83,7 +86,7 @@ app.post('/getcustomer', (req, res) => {
     var infoDetails="<h1>"+infoStringSubject+"</h1>"+
     "<h2>Contact No. " + info.phone + "</h2>"+
     "<h2>Company name:" + info.cName + "</h2>"+
-    "<h2>email address:" + info.infoStringEmailAddress + "</h2>"+
+    "<h2>email address:" + infoStringEmailAddress + "</h2>"+
     "<h2>website" + info.web + "</h2>"+
     "<h2>annual purchase vol." + info.purchaseVolume + "</h2>"+
     "<h3>comments" + info.message + "<h3>"
@@ -99,7 +102,7 @@ app.post('/getcustomer', (req, res) => {
     },
 
         {
-        to: 'reach.shinde@pack8.in',
+        to: 'induyadav018@gmail.com',
         from:'leads@pack8.in',
         subject:infoStringSubject,
         text: info.fName,
@@ -110,6 +113,7 @@ app.post('/getcustomer', (req, res) => {
       sgMail.send(msg,function (error,response) {
         if(error){
             console.log(error)
+            console.log("mailerror")
         }else{
             console.log(response)
         }
@@ -177,6 +181,8 @@ app.post('/getsupplier', (req,res) => {
 });
 
 
-app.listen(3000, () => {
+app.listen(config.get('app.server.port'), () => {
     console.log(`Server started on 3000`);
+    console.log(config.get('app.server.port'));
+    
 });
