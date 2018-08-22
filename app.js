@@ -7,9 +7,9 @@ var path=require('path')
 var config=require('config')
 var ENV=require('dotenv/config')
 var sgMail = require('@sendgrid/mail');
-console.log(config.get('app.apiKey.ss'))
+
 sgMail.setApiKey(config.get('app.apiKey.ss'));
-console.log(config.get('app.apiKey.ss'))
+
 app.use(parser.urlencoded({
     extended: true
   }));
@@ -64,11 +64,11 @@ app.get('/blogs/:id',(req,res)=>{
             {
             temp=blog
             }
-            else console.log('notfound')
+            
 
         
     });
-    console.log(temp)
+    
 res.render(blogShow,{blogContent:temp})
 })
 
@@ -76,7 +76,7 @@ res.render(blogShow,{blogContent:temp})
 
 app.get('/thanks',(req,res)=>{
 res.render('thanks')
-console.log('thanks entered')
+
 })
 
 app.post('/getcustomer', (req, res) => {
@@ -113,14 +113,14 @@ app.post('/getcustomer', (req, res) => {
       sgMail.send(msg,function (error,response) {
         if(error){
             console.log(error)
-            console.log("mailerror")
+            
         }else{
             console.log(response)
         }
       });
       
     res.redirect('thanks')
-    console.log(info)
+    
     
     
 
@@ -162,19 +162,19 @@ app.post('/getsupplier', (req,res) => {
         subject:infoStringSubject,
         text: info.fName,
         html: infoDetails,
-      }];
+      },];
 
       
       sgMail.send(msg,function (error,response) {
         if(error){
-            console.log(error)
+            
         }else{
-            console.log(response)
+            
         }
       });
       
     res.redirect('thanks')
-    console.log(info)
+    
     
    
     
@@ -182,7 +182,7 @@ app.post('/getsupplier', (req,res) => {
 
 
 app.listen(config.get('app.server.port'), () => {
-    console.log(`Server started on 3000`);
+    
     console.log(config.get('app.server.port'));
     
 });
