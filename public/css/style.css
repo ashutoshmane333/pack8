@@ -212,6 +212,27 @@ box-shadow: 6px 9px 16px -7px rgba(0,0,0,0.55);
     font-stretch: normal;
     line-height: normal;
     letter-spacing: normal;
+    color: #5D5560 ;
+}
+
+.bodycopy-regular-navlink{
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #5D5560 !important;
+}
+.bodycopy-regular-navlink:active{
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
     color: #5D5560 !important;
 }
 
@@ -337,7 +358,7 @@ height: auto;
 
 
 
-#bodymovin{
+#lottie{
     padding-top:9%;
     width:92%;
     height:92%;

@@ -54,14 +54,14 @@
           <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="customer" role="tabpanel" aria-labelledby="home-tab">
               <form action="/getcustomer" method="POST" >
-                <div class="form-element " style="width: 60%;">
+                <div class="form-element " style="width: 40%;">
                   <input class="form-control form-control" type="text" placeholder="Name" name="Name" required>
                 </div>
                 
-                <div class="form-element" style="width: 70%;">
+                <div class="form-element" style="width: 50%;">
                   <input class="form-control form-control" type="email" placeholder="example@gmail.com" name="eMail" required="true">
                 </div>
-                <div class="form-element" style="width: 70%;">
+                <div class="form-element" style="width: 40%;">
 
                   <input class="form-control form-control" type="tel" placeholder="Phone" name="phone" required="true">
                 </div>
@@ -73,13 +73,13 @@
                 <div class="form-element" style="width: 50%;">
                   <input class="form-control form-control" type="url" placeholder="Website" name="web" >
                 </div>
-                <div class="form-element">
-                  <textarea class=" form-control form-control" id="exampleFormControlTextarea1" placeholder="Annual Packaging Purchase Volume"
+                <div class="form-element" style="width: 90%;">
+                  <textarea class=" form-control form-control" id="exampleFormControlTextarea1" placeholder="Annual Packaging Purchase Volume, 10 Lakhs, 20 Lakhs, 30 Lakhs, 40 Lakhs, 1 Crore, 1 Crore "
                     rows="2" name="purchaseVolume" ></textarea>
                 </div>
 
 
-                <div class="form-element">
+                <div class="form-element" style="width: 90%;">
                   <textarea class=" form-control form-control" id="exampleFormControlTextarea1" placeholder="Message" name="message" rows="8"></textarea>
                 </div>
                 <button type="submit" class="btn-text btn btn-custom">
@@ -92,14 +92,14 @@
 <!-- supplier form -->
             <div class="tab-pane fade" id="supplier" role="tabpanel" aria-labelledby="profile-tab">
               <form action="/getsupplier" method="POST" >
-                <div class="form-element " style="width: 60%;">
+                <div class="form-element " style="width: 40%;">
                   <input class="form-control form-control" type="text" placeholder="Name" name="Name" required="true">
                 </div>
                 
-                <div class="form-element" style="width: 70%;">
+                <div class="form-element" style="width: 50%;">
                   <input class="form-control form-control" type="email" placeholder="example@gmail.com" name="eMail" required="true">
                 </div>
-                <div class="form-element" style="width: 70%;">
+                <div class="form-element" style="width: 40%;">
 
                   <input class="form-control form-control" type="tel" placeholder="Phone" name="phone" required="true">
                 </div>
@@ -125,12 +125,12 @@
                 </select>
 
                 <div class="form-element " style="width: 35%;">
-                  <input class="form-control form-control" type="text" placeholder="Production Capacity" name="productionCapacity">
+                  <input class="form-control form-control" type="text" placeholder="Production Capacity"style="width: 90%;" name="productionCapacity">
                 </div>
                 <div class="form-element">
-                  <textarea class=" form-control form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="8" name="message" ></textarea>
+                  <textarea class=" form-control form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="8" name="message" style="width: 90%;"></textarea>
                 </div>
-                <button type="submit" class="btn-text btn btn-custom">
+                <button type="submit" class="btn-text btn btn-custom" >
                   <div class="">Get Quote</div>
                 </button>
 
