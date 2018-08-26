@@ -78,7 +78,7 @@
 
 
   <div class="container">
-    <div id="carouselExample" class="carousel slide" data-ride="" data-interval="5000" data-pause="false" data-wrap="false">
+    <div id="carouselExample" class="carousel slide" data-ride="" data-interval="9000" data-pause="false" data-wrap="false">
       <div class="carousel-inner row w-100 mx-auto" role="listbox">
         <div class="carousel-item col-md-3  active">
           <div class="panel panel-default">
@@ -210,7 +210,7 @@
 
 
 
-  <div id="feature-section" style="margin-top: 0%;" >
+  <div id="feature-section" style="margin-top: -20%;" >
     <div class="container" align="center">
 
 
@@ -330,7 +330,7 @@
     </div>
   </div>
 <!-- testimonials -->
-<h1 class="title-blue" style="margin-top: 10%;">Look what people have to say about us</h1>
+<h1 class="title-blue" style="margin-top: 10%;">What people have to say about us</h1>
 <div class="container">
   <div class="row">
     <div class="col-lg-6 col-md-6 col-sm-12">
@@ -356,39 +356,43 @@
 
 
 <div id="accordion" style="margin-top:-2%;">
+  <div class="container">
+
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
       <div class="container">
-        
-              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-              <div class="container">
-                <div class="row">
-                  
-                  
-                  <div class="col-lg-6 col-md-6 col-sm-12">
-                      <div class="container-fluid">
-                        <div class="row">
-                          <p class="title-testimonial">"For the past ten months, Pack8 has been handling our packaging products and a more enthusiastic and helpful group of people from the bottom to the top you could not wish for. They are always on the ball and have never ever let us down once."</p>
-                        <p class="bodycopy-regular m-auto" style="text-align:center; font-size:1.1rem; color:#0f68b5;">K. Nandakumar
-                          Country head - Operations, Accentive India Pvt. Ltd.</p>
-                        </div>
-                      </div>
-                    </div>
-                  
-                  
-                </div>
+        <div class="row">
+
+
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="container-fluid">
+              <div class="row">
+                <p class="title-testimonial">"For the past ten months, Pack8 has been handling our packaging products and a more enthusiastic and helpful
+                  group of people from the bottom to the top you could not wish for. They are always on the ball and have
+                  never ever let us down once."</p>
+                <p class="bodycopy-regular m-auto" style="text-align:center; font-size:1.1rem; color:#0f68b5;">K. Nandakumar Country head - Operations, Accentive India Pvt. Ltd.</p>
               </div>
             </div>
-              
-                <div class="bodycopy-bold" id="headingOne">
-                  
-                    <a style="color: #0F68B5;" id="wowow" role="button" class=" bodycopy-boldm-auto" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      See more
-                    </a>
-                  
-                
-            
+          </div>
+
+
+        </div>
       </div>
-    
+    </div>
+
+    <div class="bodycopy-bold" id="headingOne">
+
+        <a style="color: #0F68B5;" role="button" class=" bodycopy-bold m-auto" data-toggle="collapse" href="#collapseOne" aria-expanded="true"
+          aria-controls="collapseOne" id="wowow">
+          See more
+        </a>
+
+    </div>
+
+  </div>
 </div>
+<!-- accordian test -->
+
+<!-- test end -->
   <div id="feature-section">
 
 
@@ -453,21 +457,21 @@
     });
 
 
-    $(document).ready(function () {
-      /* show lightbox when clicking a thumbnail */
-      $('a.thumb').click(function (event) {
-        event.preventDefault();
-        var content = $('.modal-body');
-        content.empty();
-        var title = $(this).attr("title");
-        $('.modal-title').html(title);
-        content.html($(this).html());
-        $(".modal-profile").modal({
-          show: true
-        });
-      });
+    // $(document).ready(function () {
+    //   /* show lightbox when clicking a thumbnail */
+    //   $('a.thumb').click(function (event) {
+    //     event.preventDefault();
+    //     var content = $('.modal-body');
+    //     content.empty();
+    //     var title = $(this).attr("title");
+    //     $('.modal-title').html(title);
+    //     content.html($(this).html());
+    //     $(".modal-profile").modal({
+    //       show: true
+    //     });
+    //   });
 
-    });
+    // });
 
 
 

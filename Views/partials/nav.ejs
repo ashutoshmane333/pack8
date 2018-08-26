@@ -21,21 +21,23 @@
             
             
             
-            <li class="nav-item  bodycopy-regular-navlink ">
-              <a class="nav-link mr-3" href="/about">About
-                <span class="sr-only">(current)</span>
+            <li class="nav-item  bodycopy-regular-navlink">
+              <a class="nav-link mr-3 " href="/about" id="links">About
+                <span class="sr-only" id="">(current)</span>
               </a>
             </li>
             <li class="nav-item bodycopy-regular-navlink">
-              <a class="nav-link  mr-3" href="/team">Team</a>
+              <a class="nav-link  mr-3" href="/team" id="links">Team
+                <span class="sr-only">(current)</span>
+              </a>
             </li>
             <li class="nav-item bodycopy-regular-navlink ">
-              <a class="nav-link  mr-3"  href="/blogs">Blogs
+              <a class="nav-link  mr-3"  href="/blogs" id="links">Blogs
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item bodycopy-regular-navlink" style="margin-right:50px;">
-              <a class="nav-link " href="/industry">Industries</a>
+              <a class="nav-link " href="/industry" id="links" role="button">Industries</a>
             </li>
             
 
@@ -50,3 +52,20 @@
       </nav>
     </div>
   </div>
+
+  <!-- <script>
+  function highlight(a) {
+  
+    console.log('clicked')
+    this.innerHTML=""
+    
+   }
+   
+
+  var links=document.querySelectorAll('#links')
+  links.forEach(element => {
+    element.onclick=highlight
+
+  });
+  
+  </script> -->

@@ -223,18 +223,9 @@ box-shadow: 6px 9px 16px -7px rgba(0,0,0,0.55);
     font-stretch: normal;
     line-height: normal;
     letter-spacing: normal;
-    color: #5D5560 !important;
+    color: rgb(70, 70, 70)!important;
 }
-.bodycopy-regular-navlink:active{
-    font-family: 'Open Sans';
-    font-size: 20px;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #5D5560 !important;
-}
+
 
 .bodycopy-bold{
     font-family: 'Open Sans';
@@ -366,6 +357,7 @@ height: auto;
     transform: translate3d(0,0,0);
     margin: auto;
     opacity: 1;
+    padding-bottom: 9%;
   }
 
 

@@ -8,8 +8,9 @@ ct.onclick=handleClick;
 
 function handleClick()
 {
-    console.log(ct.value)
-    ct.innerHTML = (ct.innerHTML == 'See less' ? 'See  more' : 'See less');
+    
+    ct.innerHTML = "";
+    // (ct.innerHTML == '' ? 'See  more' : '')
 }
 
 
